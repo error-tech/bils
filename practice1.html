@@ -6008,6 +6008,7 @@ function addItem(){
        else{
          
            var aarea=l*w;
+           console.log(aarea);
            if(l1==""||w1==""){
                var rarea=aarea;
            }
@@ -6132,6 +6133,8 @@ function calculateArea(){
         if(conare!=NaN){
         item_total_area=parseFloat(item_total_area)+parseFloat(conare);
     }
+    console.log("***area is",conare);
+    console.log("***item_total_area is",item_total_area);
            $("#total").val(item_total_area.toFixed(2)+" sqft");
        }
               }
