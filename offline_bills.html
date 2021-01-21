@@ -6664,7 +6664,7 @@ if(less==3){
                             //alert(length);
                            // var lengh=JSON.parse(localStorage.getItem("unsaved"));
                            //var length = Object.keys(lengh).length;
-                            console.log("&&&&&&&   ",length);
+                            
 
                             whole=JSON.parse(localStorage.getItem("unsaved"));
                             var lenhj=length-1;
@@ -6703,10 +6703,12 @@ if(less==3){
                         aaa.reverse();
                         //arr.sort();
                         var i = 0;
+                        console.log("----- ",arr);
                         for(var j in aaa){
                               i = aaa[j];
                               total=0;
                                 //var l=arr[i].length;
+                                console.log(i);
                                 console.log(arr[i]);
                                 var bill_id="OFL-00"+(i+1);
                                 var cust=arr[i][0];
