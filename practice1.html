@@ -6104,12 +6104,9 @@ function calculateArea(){
        else{
          
            var aarea=l*w;
-           console.log("@@@@ aarea ",aarea);  
-           console.log("7777 l1 ",l1); 
-        console.log("7777 w1 ",w1); 
-            if(l1==undefined||w1==undefined){
+          
+            if(l1==undefined||w1==undefined  ){
                var rarea=aarea;
-               console.log("@@@@ rarea ",rarea);
            }
            else{
                var are1=l1*w1;
@@ -6123,6 +6120,11 @@ function calculateArea(){
                if(l3==undefined||w3==undefined){
                var rarea=aarea2;
            }
+           else{
+            var are3=l3*w3;
+               var rarea=aarea2-are3;
+
+           }
            
                
            }
@@ -6131,16 +6133,15 @@ function calculateArea(){
           if(rarea<=0){
             rarea=0;
           }
-          console.log("+++++ rarea ",rarea);
+          
             var area= rarea*0.00694444;
-         console.log("+++++ area ",area);
+         
         var conare= area.toFixed(2);
-        console.log("+++++ conare ",conare);
+       
         if(conare!=NaN){
         item_total_area=parseFloat(item_total_area)+parseFloat(conare);
     }
-    console.log("***area is",conare);
-    console.log("***item_total_area is",item_total_area);
+    
            $("#total").val(item_total_area.toFixed(2)+" sqft");
        }
               }
