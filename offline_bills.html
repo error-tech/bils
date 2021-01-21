@@ -6391,16 +6391,17 @@ if(less==3){
 						   if(item!=id[1]){
 	                         var bill=[];
 	          				 bill=JSON.parse(localStorage.getItem('unsaved'))[item];
-	         				//bills[item].push(bill);
-	         				bills[item] = bill;
+	         				bills[item].push(bill);
+	         				//bills[item] = bill;
 	                        }
 						}
                      //end by NK
                      localStorage.removeItem("unsaved");
-                     
+                     console.log("((((((((((");
+                      console.log(bills);                   
      localStorage.setItem("unsaved",JSON.stringify(bills));
-      
-                   
+      console.log(JSON.parse(localStorage.getItem('unsaved')));  
+      console.log(")))))))");                 
                      location.reload();
                  }
              }
