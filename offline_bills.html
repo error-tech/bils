@@ -6325,7 +6325,7 @@ if(less==3){
 						   if(item!=id[1]){
 	                         var bill=[];
 	          				 bill=JSON.parse(localStorage.getItem('unsaved'))[item];
-	         				bills.push(bill);
+	         				bills[item].push(bill);
 	                        }
 						}
                      //end by NK
@@ -6391,7 +6391,7 @@ if(less==3){
 						   if(item!=id[1]){
 	                         var bill=[];
 	          				 bill=JSON.parse(localStorage.getItem('unsaved'))[item];
-	         				bills.push(bill);
+	         				bills[item].push(bill);
 	                        }
 						}
                      //end by NK
