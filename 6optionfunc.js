@@ -542,6 +542,8 @@ $("#ex").append(output);
      //alert("1");
      
      var prac={};
+     console.log(JSON.parse(localStorage.getItem("unsaved")));
+     console.log('..........');
      if(localStorage.getItem("unsaved")){
        prac = JSON.parse(localStorage.getItem("unsaved"));
      }
