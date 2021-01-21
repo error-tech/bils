@@ -5893,7 +5893,7 @@ return false;*/
         function addRow(){
             
            count++;
-            var markup = '<tr id="row-'+c+'"><td>'+count+'</td> <td    ><input   oninput="update()"  style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+t+'l'+c+'" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input  oninput="update()"  onkeyup="areac()"  id="ty'+t+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"     onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"  onkeyup="areac()"  id="ty'+t+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"  onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td    ><input   oninput="update()"  onkeyup="areac()" id="ty'+t+'l4-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w4-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()"  id="ty'+t+'l5-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input   oninput="update()"   onkeyup="areac()" id="ty'+t+'w5-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"   onkeyup="areac()"  id="ty'+t+'l6-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w6-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var markup = '<tr id="row-'+c+'"><td>'+count+'</td> <td    ><input   oninput="update()"  style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+t+'l'+c+'" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input  oninput="update()"  onkeyup="areac()"  id="ty'+t+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"     onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"  onkeyup="areac()"  id="ty'+t+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"  onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td></tr>';
             $("table tbody").append(markup);
             c++;
             
@@ -5943,7 +5943,7 @@ function addItem(){
               var z=t;
            t++;
           
-            var item ='<tr style="height:30px" id="row-'+z+'"><td id="tyt'+z+'"colspan="12">TOTAL:'+totalar+'</td><td colspan="12"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this); update()">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this); update()"> Delete</button></td></tr><tr><th colspan="7" style="height:50px">Colour</th><th colspan="8" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="7" style="height:50px">Lot Id</th><th colspan="8" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr ><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td colspan="3">Less4</td><td colspan="3">Less5</td><td colspan="3">Less6</td><td >Area</td></tr><tr id="row-'+c+'"><td>1</td> <td   ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l'+c+'" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l1-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l2-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l3-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l4-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w4-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l5-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w5-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l6-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w6-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var item ='<tr style="height:30px" id="row-'+z+'"><td id="tyt'+z+'"colspan="12">TOTAL:'+totalar+'</td><td colspan="12"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this); update()">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this); update()"> Delete</button></td></tr><tr><th colspan="7" style="height:50px">Colour</th><th colspan="8" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="7" style="height:50px">Lot Id</th><th colspan="8" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr ><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td colspan="3">Less4</td><td colspan="3">Less5</td><td colspan="3">Less6</td><td >Area</td></tr><tr id="row-'+c+'"><td>1</td> <td   ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l'+c+'" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'l1-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;"type="number"></td><td   ><input oninput="update()" id="ty'+t+'l2-'+c+'"   onkeyup="areac()" style="width:100%;text-align:center;"type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()" id="ty'+t+'l3-'+c+'"  onkeyup="areac()" style="width:100%;text-align:center;" type="number"><th>X</th></td><td    ><input oninput="update()"  onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
             $("table tbody").append(item);
             
             c++;
@@ -5958,7 +5958,7 @@ function addItem(){
             var rowid=$(id).closest('tr').index();  
             var sno=document.getElementById("myTable").rows[rowid].cells[0].innerHTML; 
             sno++;
-            var markup = $('<tr id="row-'+c+'"><td>'+sno+'</td> <td><input  oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td><input   oninput="update()"  onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input  oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input   oninput="update()"  onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'l4-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input   oninput="update()"  onkeyup="areac()" id="ty'+x+'w4-'+c+'" style="width:100%;text-align:center;" type="number"></td><td><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l5-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input    oninput="update()"  onkeyup="areac()" id="ty'+x+'w5-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l6-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'w6-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
+            var markup = $('<tr id="row-'+c+'"><td>'+sno+'</td> <td><input  oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td><input   oninput="update()"  onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input  oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input   oninput="update()"  onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
                 markup.insertBefore($('#myTable tbody tr:nth('+rowid+')'));
                 c++;
         }
@@ -5998,13 +5998,7 @@ function addItem(){
         var  w2=$("#ty"+g+"w2-"+f).val();
         var  l3=$("#ty"+g+"l3-"+f).val();
         var  w3=$("#ty"+g+"w3-"+f).val();
-        var  l4=$("#ty"+g+"l4-"+f).val();
-        var  w4=$("#ty"+g+"w4-"+f).val();
-        var  l5=$("#ty"+g+"l5-"+f).val();
-        var  w5=$("#ty"+g+"w5-"+f).val();
-        var  l6=$("#ty"+g+"l6-"+f).val();
-        var  w6=$("#ty"+g+"w6-"+f).val();
-        
+               
      
         
        if (l==""||w=="")
@@ -6029,34 +6023,7 @@ function addItem(){
                if(l3==""||w3==""){
                var rarea=aarea2;
            }
-           else{
-            var are3=l3*w3;
-               var aarea3=aarea2-are3;
-               if(l4==""||w4==""){
-               var rarea=aarea3;
-           }
-           else{
-            var are4=l4*w4;
-               var aarea4=aarea3-are4;
-               if(l5==""||w5==""){
-               var rarea=aarea4;
-           }
-           else{
-            var are5=l5*w5;
-               var aarea5=aarea4-are5;
-               if(l6==""||w6==""){
-               var rarea=aarea5;
-           }
-           else{
-            var are6=l6*w6;
-               var rarea=aarea5-are6;
-
-           }
-           }
-           }
-               
-               
-           }
+           
                
            }
                
@@ -6126,12 +6093,6 @@ function calculateArea(){
         var  w2=$("#ty"+g+"w2-"+f).val();
         var  l3=$("#ty"+g+"l3-"+f).val();
         var  w3=$("#ty"+g+"w3-"+f).val();
-        var  l4=$("#ty"+g+"l4-"+f).val();
-        var  w4=$("#ty"+g+"w4-"+f).val();
-        var  l5=$("#ty"+g+"l5-"+f).val();
-        var  w5=$("#ty"+g+"w5-"+f).val();
-        var  l6=$("#ty"+g+"l6-"+f).val();
-        var  w6=$("#ty"+g+"w6-"+f).val();
         
     
         
@@ -6157,34 +6118,7 @@ function calculateArea(){
                if(l3==undefined||w3==undefined){
                var rarea=aarea2;
            }
-           else{
-            var are3=l3*w3;
-               var aarea3=aarea2-are3;
-               if(l4==undefined||w4==undefined){
-               var rarea=aarea3;
-           }
-           else{
-            var are4=l4*w4;
-               var aarea4=aarea3-are4;
-               if(l5==undefined||w5==undefined){
-               var rarea=aarea4;
-           }
-           else{
-            var are5=l5*w5;
-               var aarea5=aarea4-are5;
-               if(l6==undefined||w6==undefined){
-               var rarea=aarea5;
-           }
-           else{
-            var are6=l6*w6;
-               var rarea=aarea5-are6;
-
-           }
-           }
-           }
-               
-               
-           }
+           
                
            }
                
