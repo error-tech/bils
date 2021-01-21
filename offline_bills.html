@@ -6391,8 +6391,9 @@ if(less==3){
 						   if(item!=id[1]){
 	                         var bill=[];
 	          				 bill=JSON.parse(localStorage.getItem('unsaved'))[item];
-	         				bills.push(bill);
-	         				//bills[item] = bill;
+	         				//bills.push(bill);
+	         				bills[item] = bill;
+	         				console.log("$$$--- ",bill);
 	                        }
 						}
                      //end by NK
