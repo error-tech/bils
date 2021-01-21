@@ -5657,11 +5657,17 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
             var w2=document.getElementById("myTable").rows[row+1].cells[9].children[0].value;
              var l3=document.getElementById("myTable").rows[row+1].cells[10].children[0].value;
               var w3=document.getElementById("myTable").rows[row+1].cells[12].children[0].value;
-               var area=document.getElementById("myTable").rows[row+1].cells[13].innerHTML;
+               var l4=document.getElementById("myTable").rows[row+1].cells[13].children[0].value;
+           var w4=document.getElementById("myTable").rows[row+1].cells[15].children[0].value;
+           var l5=document.getElementById("myTable").rows[row+1].cells[16].children[0].value;
+            var w5=document.getElementById("myTable").rows[row+1].cells[18].children[0].value;
+             var l6=document.getElementById("myTable").rows[row+1].cells[19].children[0].value;
+              var w6=document.getElementById("myTable").rows[row+1].cells[21].children[0].value;
+               var area=document.getElementById("myTable").rows[row+1].cells[22].innerHTML;
 
 
            
-            var markup = '<tr id="row-'+c+'"><td>'+count+'</td> <td    ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+t+'l'+c+'" type="number" value="'+l+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w+'"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'l1-'+c+'"style="width:100%;text-align:center;" type="number"  value="'+l1+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w1+'"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l2+'"></td><th>X</th><td   ><input oninput="update()"  onKeyPress="enter6(this)"  onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w2+'"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l3-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l3+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"  value="'+w3+'"></td><td id="ty'+t+'a'+c+'" >'+area+'</td></tr>';
+            var markup = '<tr id="row-'+c+'"><td>'+count+'</td> <td    ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+t+'l'+c+'" type="number" value="'+l+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w+'"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'l1-'+c+'"style="width:100%;text-align:center;" type="number"  value="'+l1+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w1-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w1+'"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l2+'"></td><th>X</th><td   ><input oninput="update()"  onKeyPress="enter6(this)"  onkeyup="areac()" id="ty'+t+'w2-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w2+'"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+t+'l3-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l3+'"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+t+'w3-'+c+'" style="width:100%;text-align:center;"type="number"  value="'+w3+'"></td><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'l4-'+c+'"style="width:100%;text-align:center;" type="number"  value="'+l4+'"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w4-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w4+'"></td><td    ><input  oninput="update()"   onkeyup="areac()"  id="ty'+t+'l5-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l5+'"></td><th>X</th><td   ><input   oninput="update()"   onkeyup="areac()" id="ty'+t+'w5-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+w5+'"></td><td   ><input oninput="update()"   onkeyup="areac()"  id="ty'+t+'l6-'+c+'" style="width:100%;text-align:center;" type="number"  value="'+l6+'"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+t+'w6-'+c+'" style="width:100%;text-align:center;"type="number"  value="'+w6+'"></td><td id="ty'+t+'a'+c+'" >'+area+'</td></tr>';
             $("table tbody").append(markup);
             c++;
         }
@@ -5692,7 +5698,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
             
            count++;
            
-            var markup = '<tr><td>'+count+'</td> <td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var markup = '<tr><td>'+count+'</td> <td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l4-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w4-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l5-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w5-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l6-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w6-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
             $("table tbody").append(markup);
             c++;
             
@@ -5711,7 +5717,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
               var z=t;
            t++;
           
-            var item = '<tr style="height:30px"><td id="tyt'+z+'"colspan="7">TOTAL:'+totalar+'</td><td colspan="7"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this)">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this)"> Delete</button></td></tr><tr><th colspan="3" style="height:50px">Colour</th><th colspan="4" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="3" style="height:50px">Lot Id</th><th colspan="4" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td>1</td> <td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
+            var item = '<tr style="height:30px"><td id="tyt'+z+'"colspan="7">TOTAL:'+totalar+'</td><td colspan="7"><button type="button" class="btn btn-success" id="btn-'+z+'" onclick="myfun(this)">Add</button><button type="button" id="del-'+z+'" class="btn btn-danger" onclick="delrow(this)"> Delete</button></td></tr><tr><th colspan="3" style="height:50px">Colour</th><th colspan="4" id="ty'+t+'" contenteditable="true" oninput="update()" ></th><th colspan="3" style="height:50px">Lot Id</th><th colspan="4" id="lot'+t+'" contenteditable="true" oninput="update()" ></th></tr><tr><td>S.NO</td><td colspan="3">Sizes</td><td colspan="3">Less1</td><td colspan="3">Less2</td><td colspan="3">Less3</td><td >Area</td></tr><tr><td>1</td> <td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l1-'+c+'"></td><th>X</th><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'w1-'+c+'"></td><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'l2-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w2-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l3-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w3-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l4-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w4-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l5-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w5-'+c+'"></td><td  ><input oninput="update()"   style="width:100%;text-align:center;"type="number"   onkeyup="areac()" id="ty'+t+'l6-'+c+'"></td><th>X</th><td   ><input oninput="update()"   style="width:100%;text-align:center;"type="number"  onkeyup="areac()" id="ty'+t+'w6-'+c+'"></td><td id="ty'+t+'a'+c+'" ></td></tr>';
             $("table tbody").append(item);
             
             c++;
@@ -5724,7 +5730,7 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
             var rowid=$(id).closest('tr').index();      
             var sno=document.getElementById("myTable").rows[rowid].cells[0].innerHTML;
             sno++;
-            var markup = $('<tr id="row-'+c+'"><td>'+sno+'</td> <td  ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td  ><input oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
+            var markup = $('<tr id="row-'+c+'"><td>'+sno+'</td> <td  ><input oninput="update()"   style="width:100%;text-align:center;"  onkeyup="areac()" id="ty'+x+'l'+c+'" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'l1-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w1-'+c+'" style="width:100%;text-align:center;" type="number"></td><td    ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l2-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td  ><input oninput="update()"    onkeyup="areac()" id="ty'+x+'w2-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input oninput="update()"  onkeyup="areac()"  id="ty'+x+'l3-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input oninput="update()"   onkeyup="areac()" id="ty'+x+'w3-'+c+'" style="width:100%;text-align:center;"type="number"></td><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'l4-'+c+'"style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input   oninput="update()"  onkeyup="areac()" id="ty'+x+'w4-'+c+'" style="width:100%;text-align:center;" type="number"></td><td><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l5-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td   ><input    oninput="update()"  onkeyup="areac()" id="ty'+x+'w5-'+c+'" style="width:100%;text-align:center;" type="number"></td><td   ><input  oninput="update()"  onkeyup="areac()"  id="ty'+x+'l6-'+c+'" style="width:100%;text-align:center;" type="number"></td><th>X</th><td    ><input  oninput="update()"   onkeyup="areac()" id="ty'+x+'w6-'+c+'" style="width:100%;text-align:center;"type="number"></td><td id="ty'+x+'a'+c+'" ></td></tr>');
                 markup.insertBefore($('#myTable tbody tr:nth('+rowid+')'));
                 c++;
         }
@@ -5769,7 +5775,12 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
         var  w2=$("#ty"+g+"w2-"+f).val();
         var  l3=$("#ty"+g+"l3-"+f).val();
         var  w3=$("#ty"+g+"w3-"+f).val();
-        
+        var  l4=$("#ty"+g+"l4-"+f).val();
+        var  w4=$("#ty"+g+"w4-"+f).val();
+        var  l5=$("#ty"+g+"l5-"+f).val();
+        var  w5=$("#ty"+g+"w5-"+f).val();
+        var  l6=$("#ty"+g+"l6-"+f).val();
+        var  w6=$("#ty"+g+"w6-"+f).val();
     
         
        if (l==""||w=="")
@@ -5795,8 +5806,31 @@ pointBorderWidth:1,data:[31,74,6,39,20,85,7]},{label:"My Second dataset",backgro
                var rarea=aarea2;
            }
            else{
-                             var are3=l3*w3;
-               var rarea=aarea2-are3;
+            var are3=l3*w3;
+               var aarea3=aarea2-are3;
+               if(l4==""||w4==""){
+               var rarea=aarea3;
+           }
+           else{
+            var are4=l4*w4;
+               var aarea4=aarea3-are4;
+               if(l5==""||w5==""){
+               var rarea=aarea4;
+           }
+           else{
+            var are5=l5*w5;
+               var aarea5=aarea4-are5;
+               if(l6==""||w6==""){
+               var rarea=aarea5;
+           }
+           else{
+            var are6=l6*w6;
+               var rarea=aarea5-are6;
+
+           }
+           }
+           }
+               
                
            }
                
