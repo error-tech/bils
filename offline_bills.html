@@ -6627,7 +6627,9 @@ if(less==3){
       var whole={};
         if((localStorage.getItem("unsaved"))){
              
-                            var length=JSON.parse(localStorage.getItem("unsaved")).length;
+                            //var length=JSON.parse(localStorage.getItem("unsaved")).length;
+                            var lengh=JSON.parse(localStorage.getItem("unsaved"));
+                           var length = Object.keys(lengh).length;
                             //alert(length);
                             whole=JSON.parse(localStorage.getItem("unsaved"));
                             
@@ -6660,6 +6662,10 @@ if(less==3){
          if((localStorage.getItem("unsaved"))){
                             var length=JSON.parse(localStorage.getItem("unsaved")).length;
                             //alert(length);
+                           // var lengh=JSON.parse(localStorage.getItem("unsaved"));
+                           //var length = Object.keys(lengh).length;
+                            console.log("&&&&&&&   ",length);
+
                             whole=JSON.parse(localStorage.getItem("unsaved"));
                             var lenhj=length-1;
                             
