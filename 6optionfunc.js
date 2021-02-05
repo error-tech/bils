@@ -449,8 +449,8 @@ $("#ex").append(output);
            else if(lid<len){
            	$("#lot"+t).css("background-color", "skyblue");
            	alert('please fill LOTID');
-           }
-     }*/
+           }*/
+     }
    var pra=[name,adress,phone,date,con,vehicle,less,refer,load,aprvd,sales];
      for(var g=1;g<=t;g++){
 
